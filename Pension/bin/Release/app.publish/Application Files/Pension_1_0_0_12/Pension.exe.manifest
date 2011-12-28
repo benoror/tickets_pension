@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="Pension.exe" version="1.0.0.12" publicKeyToken="0024eeae01f436e3" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="Icono.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Pension" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Pension.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.SqlServerCe" version="3.5.1.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pension.exe" size="304640">
+      <assemblyIdentity name="Pension" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>1DatLjgDAxz6IQZzIm7cSVK/qTA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Cortes\carpeta_cortes.txt" size="3">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VyGMMWtpIeLNYQJ6I4ftwxotlHE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Icono.ico" size="173742">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9LrqSfkKqWTgHHwbjOVObr9pvNU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pension.exe.config" size="1621">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/QWU69l2oYlB5MvchtZRG6r44yw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pension.mdb" size="159744" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wIAtmkCT5vzQZ3378Pm7wH5oaZY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="settings.conf" size="53">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Ev1IOlfHfIV/go0fy8f2PHTmEBY=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SX64PC\Administrator" issuerKeyHash="6a47a4265ec66995d3826e14b5605f8f93dc5d1f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>lnduBsw+gjll4synpih4jYerHdw=</DigestValue></Reference></SignedInfo><SignatureValue>nd4xKZiLtky+EQxfjFj8jherrJHE9GXS5HUjyZW6MFRAdppIWSe8H1vm7pB7I4fk2Vpx9eG1ratyDLgus8T+vPAcFq0nVkLzy/FPqMN8Q2TTuNFbOkbobdSmxA9E/55d3nWDLM6Sa0hH4T9BXbUXwbDMVkFJbacGaFpgPNgtxGA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>n20lZwhNSjvMaEaxck0gqJynV4X/Vy317w6Unh8ENr4MW/pLKjbp4PxSpsEoHd2fFJ76uJEhswQHnz+Si0PiS5I5ct6QAUFKaQxyYPHM+pP27ELHNAdaK8ty1srG/yxfaAtoDI6FYiHVmBmJt52/DaTlFxEgBxi7TTmN/y3EHtU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="dc1dab878d7828a6a7cce26539823ecc066e7796" Description="" Url=""><as:assemblyIdentity name="Pension.exe" version="1.0.0.12" publicKeyToken="0024eeae01f436e3" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SX64PC\Administrator</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>ixLABmwyZxE1TxxDjiRyPa/ZVfw=</DigestValue></Reference></SignedInfo><SignatureValue>PEYVIFrNWqQ6+5K2U1lTnUdgcPIttRy3aarcvJBO3X2IPivikgFR4DYqccXxmNiUROos0NjO+P7Xfaiz+1RgTvO5/zv5rgsei72TkPIbY6pB2WF2Y8fCf5m3GQUXxFlaooYJ19lIacUczgBqtOW1cXqlAJWpqJu4CL3nPtqCkl4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>n20lZwhNSjvMaEaxck0gqJynV4X/Vy317w6Unh8ENr4MW/pLKjbp4PxSpsEoHd2fFJ76uJEhswQHnz+Si0PiS5I5ct6QAUFKaQxyYPHM+pP27ELHNAdaK8ty1srG/yxfaAtoDI6FYiHVmBmJt52/DaTlFxEgBxi7TTmN/y3EHtU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAU6gAwIBAgIQYjrEqU9/u4dJ7KAeWpOOUDAJBgUrDgMCHQUAMDMxMTAvBgNVBAMeKABTAFgANgA0AFAAQwBcAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIwHhcNMTAwMjE2MjAzMDQyWhcNMTEwMjE3MDIzMDQyWjAzMTEwLwYDVQQDHigAUwBYADYANABQAEMAXABBAGQAbQBpAG4AaQBzAHQAcgBhAHQAbwByMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCfbSVnCE1KO8xoRrFyTSConKdXhf9XLfXvDpSeHwQ2vgxb+ksqNung/FKmwSgd3Z8Unvq4kSGzBAefP5KLQ+JLkjly3pABQUppDHJg8cz6k/bsQsc0B1ory3LWysb/LF9oC2gMjoViIdWYGYm3nb8NpOUXESAHGLtNOY3/LcQe1QIDAQABMAkGBSsOAwIdBQADgYEAWFuxIzpgnM054KkRl6pq3pCk0//z18etI7Ee4AJRQFrEa6TlxCmHUOA7F2We5rRC/2UQE3+ThtFt9dCV77w12uuV60tA0P8THMhbyAHauzyBBph31hGlgBlcxMUEMglp9iTCL0VVYiyYLnnTya1CO5vhE+ISqwnXZadGOGiAjPM=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
